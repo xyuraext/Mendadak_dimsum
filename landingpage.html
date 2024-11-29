@@ -1,0 +1,237 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Mendadak Dimsum
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #ff6347;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .hero {
+            background: url('https://storage.googleapis.com/a1aa/image/pUFAe7dvfDl5oUYZHzrMzKNNUD3uIj6raApVO7Rvy4lGgz1TA.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        .hero h1 {
+            font-size: 3em;
+            z-index: 1;
+        }
+        .hero::before {
+            content: "";
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+        }
+        .container {
+            padding: 20px;
+        }
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .menu-item {
+            background-color: #f4f4f4;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            text-align: center;
+        }
+        .menu-item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .menu-item h3 {
+            margin: 10px 0;
+        }
+        .menu-item p {
+            color: #555;
+        }
+        .testimonials, .blog, .loyalty, .live-chat {
+            margin: 20px 0;
+        }
+        .testimonials h2, .blog h2, .loyalty h2, .live-chat h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .testimonial-item, .blog-item {
+            background-color: #f4f4f4;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .testimonial-item p, .blog-item p {
+            color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+  </style>
+ </head>
+ <body>
+  <header>
+   <h1>
+    Mendadak Dimsum
+   </h1>
+  </header>
+  <nav>
+   <a href="#home">
+    Home
+   </a>
+   <a href="#menu">
+    Menu
+   </a>
+   <a href="#testimonials">
+    Testimonials
+   </a>
+   <a href="#blog">
+    Blog
+   </a>
+   <a href="#loyalty">
+    Loyalty Program
+   </a>
+   <a href="#contact">
+    Contact
+   </a>
+  </nav>
+  <div class="hero">
+   <h1>
+    Welcome to Mendadak Dimsum
+   </h1>
+  </div>
+  <div class="container">
+   <section class="menu" id="menu">
+    <div class="menu-item">
+     <img alt="Steamed dimsum in a bamboo steamer" height="200" src="https://storage.googleapis.com/a1aa/image/9tFXA1SP3i7fZCtWjAzE9sC7T100b1MWfpBEFI55BoNZVz1TA.jpg" width="300"/>
+     <h3>
+      Steamed Dimsum
+     </h3>
+     <p>
+      Delicious steamed dimsum with a variety of fillings.
+     </p>
+    </div>
+    <div class="menu-item">
+     <img alt="Fried dimsum on a plate with dipping sauce" height="200" src="https://storage.googleapis.com/a1aa/image/AsdjhQAGh7bvJFCOuo8jdgsqkzSuQI4cMLYYzTXxbltV1c9E.jpg" width="300"/>
+     <h3>
+      Fried Dimsum
+     </h3>
+     <p>
+      Crispy fried dimsum served with a tangy dipping sauce.
+     </p>
+    </div>
+    <div class="menu-item">
+     <img alt="Assorted dimsum in a bamboo steamer" height="200" src="https://storage.googleapis.com/a1aa/image/n1WtXM9NTjJEMZlScHc3jyseTevdktvlYgyMwiXXiLuYVz1TA.jpg" width="300"/>
+     <h3>
+      Assorted Dimsum
+     </h3>
+     <p>
+      A mix of our best dimsum varieties in one platter.
+     </p>
+    </div>
+   </section>
+   <section class="testimonials" id="testimonials">
+    <h2>
+     Customer Testimonials
+    </h2>
+    <div class="testimonial-item">
+     <p>
+      "The best dimsum I've ever had! Highly recommend the steamed dimsum."
+     </p>
+     <p>
+      - John Doe
+     </p>
+    </div>
+    <div class="testimonial-item">
+     <p>
+      "Amazing flavors and great service. Will definitely come back!"
+     </p>
+     <p>
+      - Jane Smith
+     </p>
+    </div>
+   </section>
+   <section class="blog" id="blog">
+    <h2>
+     Our Blog
+    </h2>
+    <div class="blog-item">
+     <h3>
+      The History of Dimsum
+     </h3>
+     <p>
+      Learn about the rich history and cultural significance of dimsum.
+     </p>
+    </div>
+    <div class="blog-item">
+     <h3>
+      Dimsum Making Tips
+     </h3>
+     <p>
+      Get tips and tricks for making perfect dimsum at home.
+     </p>
+    </div>
+   </section>
+   <section class="loyalty" id="loyalty">
+    <h2>
+     Loyalty Program
+    </h2>
+    <p>
+     Join our loyalty program and earn points for every purchase. Redeem points for discounts and special offers.
+    </p>
+   </section>
+   <section class="live-chat" id="contact">
+    <h2>
+     Contact Us
+    </h2>
+    <p>
+     Have questions or need assistance? Use our live chat feature to get in touch with us directly.
+    </p>
+   </section>
+  </div>
+  <footer>
+   <p>
+    © 2023 Mendadak Dimsum. All rights reserved.
+   </p>
+  </footer>
+ </body>
+</html>
